@@ -1,6 +1,8 @@
 /* root class */
 
-
+.hide {
+  display: none;
+}
 
 body {
   font-family: "Fira Sans", serif;
@@ -436,4 +438,17 @@ footer hr {
   margin-right: 23px;
 }
 
+@media screen and (max-width: 576px) {
+  header > nav {
+    padding: 0 5px;
+  }
+  .header-title {
+    font-size: 18px;
+  }
 
+  .btn-secondary:hover {
+    padding: 8px 18px;
+    font-size: 10px;
+
+  }
+}
