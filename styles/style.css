@@ -1,9 +1,5 @@
 /* root class */
 
-.hide {
-  display: none;
-}
-
 body {
   font-family: "Fira Sans", serif;
   font-weight: 400;
@@ -438,17 +434,117 @@ footer hr {
   margin-right: 23px;
 }
 
+.hide {
+  display: none;
+}
+
 @media screen and (max-width: 576px) {
+  /* common */
+
+  .hero-section, .news-card, .pillars-items-contener, .vision-items-contener {
+    flex-direction: column;
+  }
+
+  main {
+    padding: 20px 5px;
+  }
+
+  /* header */
   header > nav {
     padding: 0 5px;
   }
   .header-title {
+    font-size: 24px;
+  }
+
+  .btn-secondary {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+  .btn-secondary:hover {
+    padding: 15px 30px;
+    font-size: 16px;
+  }
+
+  /* hero */
+
+  .hero-section {
+    padding: 10px 20px;
+  }
+
+  .hero-title {
+    font-size: 36px;
+  }
+
+  .hero-subtitle {
     font-size: 18px;
   }
 
-  .btn-secondary:hover {
-    padding: 8px 18px;
-    font-size: 10px;
-
+  .btn-primary {
+    padding: 12px 18px;
+    font-size: 14px;
   }
+  .btn-primary:hover {
+    padding: 12px 18px;
+    font-size: 14px;
+  }
+
+  .hero-img {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: 24px;
+  
+}
+
+.section-card {
+  padding: 1px;
+}
+
+.opinion-table, th, td {
+  padding: 5px;
+  font-size: 12px;
+  
+}
+.opinion-selector {
+  padding: 5px;
+  font-size: 16px;
+}
+
+.donate-item-contner {
+  gap: 5px;
+}
+
+.donate-select-item {
+  padding: 10px 10px;
+}
+
+.donate-select-item:hover {
+  padding: 10px 10px;
+}
+
+.select-amount {
+  font-size: 16px;
+  
+}
+.news-card {
+
+  padding: 20px;
+  
+}
+
+.donate-input-contaner {
+  padding: 20px;
+}
+
+.newsletter {
+  padding: 30px 20px;
+}
+
+.newsletter-btn-primary {
+  padding: 18px 20px;
+
+}
+
 }
